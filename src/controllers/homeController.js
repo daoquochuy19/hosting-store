@@ -21,6 +21,10 @@ const login = (req, res) => {
     res.render('login.ejs')
 }
 
+const register = (req, res) => {
+    res.render('register.ejs')
+}
+
 module.exports ={
-    getHomepage,getBlog, getContact, getCart,login
+    getHomepage,getBlog, getContact, getCart, login, register
 }

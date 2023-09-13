@@ -8,8 +8,8 @@
   <title></title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/style-login.css">
-  <link rel="stylesheet" href="assets/css/set1.css">
+  <link rel="stylesheet" href="assets/css/style-register.css">
+  <link rel="stylesheet" href="assets/css/set2.css">
 
   <!--Google Fonts-->
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
@@ -24,16 +24,22 @@
     <div class="row">
       <div class="col-md-6 left-side">
         <!-- <header>
-          <h3>Welcome back!</h3>
+          <span>Need an account?</span>
+          <h3>Create Account</h3>
         </header> -->
       </div>
-      <div class="col-md-6 right-side">
-        <form method="POST" action="">
+      <form method="POST" action="">
+        <div class="col-md-6 right-side">
           <span class="input input--hoshi">
             <input class="input__field input__field--hoshi" type="text" id="name">
             <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
               <span class=" input__label-content--hoshi">Name</span>
-              
+            </label>
+          </span>
+          <span class="input input--hoshi">
+            <input class="input__field input__field--hoshi" type="text" id="email">
+            <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="email">
+              <span class=" input__label-content--hoshi">E-mail</span>
             </label>
           </span>
           <span class="input input--hoshi">
@@ -42,20 +48,25 @@
               <span class=" input__label-content--hoshi">Password</span>
             </label>
           </span>
+          <span class="input input--hoshi">
+            <input class="input__field input__field--hoshi" type="password" id="password1">
+            <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="password1">
+              <span class=" input__label-content--hoshi">Repeat Passowrd</span>
+            </label>
+          </span>
           <div class="cta">
-            <button class="btn btn-primary pull-left" type="submit" method="POST"> 
-              Login 
+            <button class="btn btn-primary pull-left" type="submit" method="POST">
+              Sign-Up Now
             </button>
-            <span><a href="/register">You don't have an account?
-            </a></span>
+            <span><a href="login">I am already a member</a></span>
           </div>
         </form>
-          <ul class="social list-inline">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Linkedin</a></li>
-          </ul>
-      </div> 
+        <ul class="social list-inline">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 

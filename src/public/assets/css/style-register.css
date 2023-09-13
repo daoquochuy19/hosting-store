@@ -2765,12 +2765,12 @@ html {
 	position: relative;
 	min-height: 100vh;
 	text-align: center;
-	background: #000 url(../images/bg1.jpg) no-repeat center;
+	background: #000 url(../images/bg2.png) no-repeat center;
 	background-size: cover;
   }
   .left-side header {
 	position: relative;
-	margin-top: 80px;
+	margin-top: 50px;
   }
   .left-side header span {
 	margin-bottom: 6px;
@@ -2778,7 +2778,6 @@ html {
 	font-family: 'lato', sans-serif;
 	text-transform: uppercase;
 	font-size: 13px;
-	color: #999;
 	letter-spacing: 0.12em;
   }
   .left-side header h3 {
@@ -2788,7 +2787,6 @@ html {
 	font-weight: 400;
 	line-height: 72px;
 	letter-spacing: 0.01em;
-  color: #2C383D;
   }
   .right-side {
 	position: relative;
@@ -2822,7 +2820,7 @@ html {
 	-webkit-transition: 0.2s ease-in;
 	-o-transition: 0.2s ease-in;
 	transition: 0.2s ease-in;
-	background: #2C383D;
+	background: #ff3f00;
   }
   .right-side .cta span {
 	margin-top: 10px;
@@ -2852,7 +2850,7 @@ html {
   .right-side .social li:after {
 	padding-left: 10px;
 	content: "-";
-	color: #2C383D;
+	color: #ff5500;
   }
   .right-side .social li a {
 	font-family: 'lato', sans-serif;
