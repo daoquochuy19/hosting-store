@@ -1,14 +1,27 @@
-// const mysql = require('mysql2');
-// require('dotenv').config();
+const mysql = require('mysql2');
 
-// const connection = mysql.createPool({
-//   host: process.env.DB_HOST,
-//   port: process.env.DB_PORT,
-//   user: process.env.DB_USER,
-//   password: process.env.DB_PASSWORD,
-//   database: process.env.DB_NAME,
-//   waitForConnections: true,
-//   connectionLimit: 10,
-//   queueLimit: 0,
-// });
-// module.exports = connection;
+const connection = mysql.createConnection({
+	host : 'localhost',
+	database : 'hosting-store',
+	user : 'root',
+	password : ''
+});
+
+connection.connect(function(error){
+	if(error)
+	{
+		throw error;
+	}
+	else
+	{
+		console.log('MySQL Database is connected Successfully');
+	}
+});
+// connection.query(
+//     'select * from user',
+//     function(err, results, fields) {
+//       console.log(results); // results contains rows returned by server
+//     }
+//   );
+
+module.exports = connection;
